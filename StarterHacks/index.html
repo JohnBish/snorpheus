@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snorpheus Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <input v-on:change="fileUpload" id="f-input" type="file">
+    <canvas id="canvas" style="font-family: 'Lobster'"></canvas>
+    <audio v-on:play="play" v-on:pause="pause" id="audio" controls crossorigin="anonymous"></audio>
+</body>
+</html>

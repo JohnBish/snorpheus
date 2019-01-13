@@ -1,0 +1,179 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#outerContainer {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 30% 70%;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    grid-gap: 3px;
+}
+
+#app {
+    grid-row: 2 / 3;
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-rows: 20px auto;
+}
+
+#canvas {
+    margin-top: 1vh;
+    padding-left: calc((100% - 400px)/2);
+}
+
+#prompt {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: calc(50vh / 2);
+    height: 50vh;
+    width: calc((100% - 4vw - 30vw));
+    margin-left: 15vw;
+    border: dashed black 1px;
+    border-radius: 5px;
+    background-color: rgba(220, 220, 220, 0.6);
+    z-index: 1;
+}
+
+#large {
+    grid-column: 1 / 2;
+    height: 100%;
+    background-color: green;
+}
+
+#audio {
+    height: 20px;
+
+}
+
+#divs {
+    width: 100%;
+}
+
+#pop-up {
+    z-index: 5;
+}
+
+#description {
+    z-index: 4;
+    font-family: "Lobster";
+    position: absolute;
+    top: 35vh;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+#title {
+    z-index: 4;
+    color: white;
+    text-align: center;
+    font-family: "Lobster";
+    font-size: 90px;
+    position: absolute;
+    width: 100%;
+    top: 10vh;
+}
+
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444;
+}
+
+.navhome {
+    float: left;
+    display: block;
+    text-align: center;
+    margin: 12px 14px;
+    text-decoration: none;
+    font-family: "Lobster";
+    font-size: 18px;
+    color: white;
+}
+
+.navtext {
+    float: right;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin: 12px 0px;
+    text-decoration: none;
+    font-family: "Lobster";
+    color: white;
+    height: 100%;
+}
+
+.navtext a, .navhome a {
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+}
+
+.navtext a:hover, .navhome a:hover {
+    background-color: #111;
+}
+
+
+#buttondescription {
+    font-family: "Sarabun";
+}
+
+#f-input {
+    display: none;
+}
+
+#uploadButton {
+    border: solid black 1px;
+    font-family: "Sarabun";
+    border-radius: 3px;
+    padding: 5px;
+}
+
+#uploadButton:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+.body {
+    margin-left: 4%;
+}
+
+.aboutheader {
+    font-size: 52px;
+    font-family: "Lobster";
+}
+
+.headers {
+    font-family: "Sarabun";
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-end;
+    height:445px;
+    width:455px;
+    float: right;
+    margin: 4%;
+}
+
+.text {
+    font-size: 19px;
+    font-family: "Sarabun";
+}
+
+.points {
+    font-size: 19px;
+    font-family: "Sarabun";
+}
